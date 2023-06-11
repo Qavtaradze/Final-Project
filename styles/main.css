@@ -1,0 +1,101 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+}
+
+.information-container {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 30px;
+  color: #FFFFFF;
+  font-family: cursive;
+}
+
+.information-container span {
+  display: block;
+}
+
+.information-container span::first-letter {
+  color: red;
+}
+
+#game-container {
+  width: 50vh;
+  height: 50vh;
+  border: 10px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+#game-container .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border: 2px solid white;
+  background-color: black;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+#game-container .item:hover span {
+  color: red;
+}
+
+#game-container .item span {
+  color: white;
+  font-size: 70px;
+  font-family: cursive;
+}
+
+#game-container .item span.active {
+  color: red;
+}
+
+#reset {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: none;
+  background: brown;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  color: #FFF;
+  font-family: cursive;
+  font-size: 30px;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  cursor: pointer;
+}
+
+#reset:hover {
+  background: #FFF;
+  color: brown;
+}
+/*# sourceMappingURL=main.css.map */
